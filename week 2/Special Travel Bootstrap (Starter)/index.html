@@ -12,6 +12,11 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
@@ -37,8 +42,34 @@
 
     <div class="container">
       <h1>Welcome to Special Travel!</h1>
-      <img src="img/pyramids.jpg" alt="Pyramids" />
-      <img src="img/sphinx.jpg" alt="Sphinx" />
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/pyramids.jpg" class="d-block w-100" alt="Pyramids" />
+          </div>
+          <div class="carousel-item">
+            <img src="img/sphinx.jpg" class="d-block w-100" alt="Sphinx" />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
       <div class="row">
         <div class="col-xs-12 col-sm-6">
           <h2>Exclusive offers for more than ten years</h2>
